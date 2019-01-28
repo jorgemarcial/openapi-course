@@ -1,6 +1,13 @@
 'use strict'
 
-const item = {}
+const item = {
+  name: 'example',
+  description: 'example',
+  type: 'example type',
+  endDate: new Date(),
+  percentage: 0,
+  count: 0
+}
 
 function list() {
   const items = []

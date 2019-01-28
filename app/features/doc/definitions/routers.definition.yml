@@ -1,0 +1,14 @@
+/myItem:
+  get:
+    summary: Get myItems
+    description: Return all myItems
+    tags: [MyItems]
+    security:
+    - BearerAuth: []
+    parameters:
+    - $ref: '#/components/parameters/skipParam'
+    - $ref: '#/components/parameters/limitParam'
+    - $ref: '#/components/parameters/langParam'
+    responses:
+      200:
+        $ref: '#/components/responses/SampleList'
